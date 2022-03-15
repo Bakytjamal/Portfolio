@@ -1,7 +1,7 @@
 :root {
-  --accent: #174180;
-  --accent-light: #3764a7;
-  --pure-white: #fff;
+  --accent: #ffa500;
+  --accent-light: #83878b;
+  --pure-white: black;
 }
 
 html {
@@ -18,13 +18,22 @@ html {
 body {
   margin: 0;
   font-family: "Open Sans", sans-serif;
-  color: var(--accent);
+  color: var(--pure-white);
 }
 
 .container {
   width: 1140px;
   margin: 0 auto;
   padding: 0 15px;
+}
+
+.section {
+  padding: 60px 0;
+}
+
+.section-title {
+  text-transform: uppercase;
+  text-align: center;
 }
 
 .header {
@@ -70,6 +79,101 @@ transition: background-color 0.3s;
 .header-menu-link:hover {
   background-color: var(--accent-light);
 }
+
+.intro { 
+  padding: 60px 0;
+}
+
+.intro-inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro-left {
+  width: 30%;
+}
+
+.intro-img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+}
+
+.intro-right {
+  width: 60%;
+}
+
+.intro-right 
+.intro-right h3 {
+  margin: 0 0 10px;
+}
+
+.contacts {
+  margin-bottom: 60px;
+}
+
+.contacts ul {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.contacts li {
+  text-align: center;
+}
+
+.skills {
+  padding: 60px 0;
+  color: var(--pure-white);
+  background-color: var(--accent);
+}
+
+.skills ul { 
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.skills li {
+  padding: 10px 15px;
+  background-color: var(--accent-light);
+  border-radius: 4px;
+}
+
+.code-example {
+  text-align: center;
+}
+
+.code-example p {
+  font-style: italic;
+}
+
+.code-example b {
+  font-size: normal;
+}
+
+.code-example pre {
+  width: 60%;
+  margin: 0 auto;
+  text-align: left;
+  color: var(--pure-white);
+  font-size: 1.2em;
+  background-color: var(--accent);
+  border-radius: 8px;
+}
+
+
+
+
+
 
 
 
